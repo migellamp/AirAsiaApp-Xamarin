@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirstApp.WellcomePage">
+    <ContentPage.Content>
+        <StackLayout Padding="42">
+
+            <Image Source="logo" WidthRequest="400" Margin="0,170,0,110"></Image>
+
+            <Label Text="Selamat Datang di aplikasi AirAsia, 
+                   Silahkan memilih jadwal Penerbangantermurah yang ada pada aplikasi"
+               FontFamily="Poppins"
+               HorizontalTextAlignment="Center"
+               TextColor="#404040"
+               FontSize="13"/>
+
+
+            <Button Text="PREPARE FOR TAKE-OFF ✈" BackgroundColor="#FF3636"
+                TextColor="White" x:Name="ShowButton" 
+                Clicked="MyButton_Clicked"
+                Margin="0,80,0,0"
+                FontFamily="Poppins-Bold"
+                FontSize="18"
+                Padding="0,4"
+                HeightRequest="62"
+                />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirstApp.MainPage">
+    <StackLayout Padding="42">
+        <Image Source="logo" WidthRequest="130" Margin="0,-20"></Image>
+
+        <Label Text="Jakarta(Soekarno Hatta) to Surabaya" 
+            FontSize="15"
+            TextColor="Black"
+            FontFamily="Poppins-Bold"
+            Margin="0,29,0,0" />
+
+        <Label Text="13 Apr 2022" 
+        FontSize="16"
+        TextColor="Black"
+        FontFamily="Poppins-Bold"
+        Margin="0,-15,0,24"
+        />
+
+        <Image Source="ticket" WidthRequest="300">
+            </Image>
+
+        <Label Text="Tambahkan Detail Penumpang" 
+            FontSize="15"
+            TextColor="Black"
+            FontFamily="Poppins-Bold"
+            Margin="0,29,0,15"
+            />
+        <Label Text="Dewasa" 
+               FontSize="13"
+               TextColor="#FF3636"
+               FontFamily="Poppins-Bold"
+               />
+        <Label Text="Please provide yout name as in the passport"
+               Padding="0,0,0,15"
+               Margin="0,-13,0,0"
+               FontFamily="Poppins"
+               FontSize="10"/>
+        
+        <Label Text="Title*"
+               FontSize="12"
+               FontFamily="Poppins-Light"
+               Margin="0,0,0,-14"/>
+        
+        <Entry x:Name="title"></Entry>
+
+        <Label Text="First Name *" FontSize="12" FontFamily="Poppins-Light" Margin="0,0,0,-14" />
+        <Entry x:Name="first"></Entry>
+
+        <Label Text="Last Name*" FontSize="12" FontFamily="Poppins-Light" Margin="0,0,0,-14" />
+        <Entry x:Name="last"></Entry>
+
+        <Label Text="Birtday*" FontSize="12" FontFamily="Poppins-Light" Margin="0,0,0,-14" />
+        <Entry x:Name="date"></Entry>
+
+
+        <Button Text="Payment" BackgroundColor="#FF3636"
+                TextColor="White" x:Name="ShowButton" 
+                Clicked="ShowButton_Clicked"
+                Margin="0,30,0,0"
+                FontFamily="Poppins-Bold"
+                FontSize="18"
+                Padding="0,4"
+                HeightRequest="36"
+                />
+        
+
+        <Label x:Name="lblName" 
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+    </StackLayout>
+
+    
+
+
+</ContentPage>

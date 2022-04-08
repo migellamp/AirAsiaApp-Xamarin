@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:effects="clr-namespace:FirstApp.Effects"
+             x:Class="FirstApp.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Padding="42">
+
+            <Image Source="logo" WidthRequest="200" Margin="0,30,0,90"></Image>
+
+            <Label Text="Selamat Datang" 
+               FontSize="20"
+               TextColor="Black"
+               FontFamily="Poppins-Bold"
+               />
+            <Label Text="Yuk Login dulu untuk memesan tiket!"
+               Padding="0,0,0,15"
+               Margin="0,-13,0,0"
+               FontFamily="Poppins"
+               FontSize="15"/>
+
+            <Frame Padding="10,-5,0,-10" CornerRadius="20" HeightRequest="50" Margin="0,20,0,20">
+                <Entry Placeholder="Masukkan Email" FontFamily="Poppins" FontSize="14">
+                    <Entry.Effects>
+                        <effects:PlainEntry/>
+                    </Entry.Effects>
+                </Entry>
+            </Frame>
+            <Frame Padding="10,-5,0,-10" CornerRadius="20" HeightRequest="50">
+                <Entry Placeholder="Masukkan Password" FontFamily="Poppins" FontSize="14">
+                    <Entry.Effects>
+                        <effects:PlainEntry/>
+                    </Entry.Effects>
+                </Entry>
+            </Frame>
+
+            <Button Text="Login" BackgroundColor="#FF3636"
+                TextColor="White" x:Name="ShowButton" 
+                Margin="0,60,0,0"
+                FontFamily="Poppins-Bold"
+                Clicked="ShowButton_Clicked"
+                FontSize="18"
+                Padding="0,4"
+                HeightRequest="42"
+                CornerRadius="5"
+                />
+
+            <Label Text="Dont'Have Account Login? SignUp" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="0,100,0,0"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
